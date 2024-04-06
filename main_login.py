@@ -1015,11 +1015,6 @@ class TripleSensorLogic:
 
 class DoubleSensorLogic:
 
-
-
-                                                                                                                            
-# ============================ old logic for double sensor ends here ======================
-        
     def __init__(self, root,patientName,noofsensor,dob,hospitalName,gender,height,weight,d_notch_ank, d_notch_rad,uid):  
     
         self.patient = patientName
