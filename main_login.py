@@ -111,30 +111,6 @@ def check_internet_connection():
 
 # firebase config for authentication
 
-firebaseConfig = {
-    'apiKey': "AIzaSyAc0lGU3SkNpq_3im9HXBDeEIfz9sE6OYs",
-    'authDomain': "arterypulseanalyzer.firebaseapp.com",
-    'databaseURL': "https://arterypulseanalyzer.firebaseio.com",
-    'projectId': "arterypulseanalyzer",
-    'storageBucket': "arterypulseanalyzer.appspot.com",
-    'messagingSenderId': "367434956236",
-    'appId': "1:367434956236:web:30f044b0c21dffd5ecb169"
-}
-
-firebaseConfig2 = {
-  "type": "service_account",
-  "project_id": "apadb-v2-replica",
-  "private_key_id": "c8d95c6f276f59b4afdb9334c7a9c449950ca3fd",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCh8y692UMqV52P\nMlP4t5zunHKJjkIYc27JBbatxFArRdQSAF80GMejaboKoqcwLKpmra1JI1AZsC8O\nb5n8Nm1IQOip7e+miacRDFyH4ntAFjoh/rXIASCKkxFFQziLCd93lP2Ihium40TW\n77uNMRdDrMAJfBr3yxhTFqy3rglttVmCNS0UGzvFYl9XBhdU4QNlVkwkhUkz1P13\nFxfsWtxtIxrFQUrRttBuQEbq2k3W0BDWvTTwVgK5LMgV7BKGDiMOShYWCOK+kpED\n9ZSUJyxB66kWZI8BIwddh5Dd7gnvKF2NOXd0e9mlWMbw0se1rXXWl2OSLA02qO07\nbU9SPjf5AgMBAAECggEACOsh4b8Z9uDkfUsLJZ6DntP7Q8N+NNIAjG313tu5gtSM\nMUyXcZXuwpCd4pw3+EwcEIj+dWa42x1LzhqhFdWvzs488doM+/Rx1fDCv2dJHHZM\n5RaIOgzZLFXH2khcJV4EZ4Bgi5jrRPwYNvz0l2SCxeLjdXJB8ETyizrWWqF+hUMk\nXLFS+M+7MO2rwnMM8zygLAUncaSBbFx1W0k6k6e6kd68/aZ40OXctPZrvODtOSXl\ncMOW5hDgxI1Ldni68O6pgBmtkX4KeLNjmnq0BWJDJcnCvAQXCS6CxSRArj5d590m\n7XhPoauUIevmnqhvOVsYwUg0jDv8lCnfrQfdVZDCnQKBgQDWa8un1YVJyKQ+V6oz\nseBlaerfjjEPMsf8pZbiXMKMypHOSBO6Y7sAWX1ZKoxGRbAScYNdL5j0rTk+Bd92\nvS2mKiWZ3RQr9pfeCL9snsFET7bmVp49ppgk21VftiwaPQPbf1hEJvKIgVhqy0yg\ndy1TOAYvswEOM3a5xJ2XoXuS9QKBgQDBWqK9Pd+yX5u1Ivr3sjA2kIT96XuYW/Vu\nr81PdBZLUyYl3lD3tcuzmjqbSH0fC8moOaLSl+dA6PWpCohL9nGH97B8xyGzCMAO\n3ZBVnvJ5PDZqCmnlO9xuPXAEHRi9oYdQRNjUQVC0FcVvoYoEAXhgxsDJWQhoBdRy\nL8yu1bcWdQKBgDvn5gBAEXspyWl5iJ3kxnLPAsXurho279TQVrVrgRdgyRe+33Ql\nxOs2FWVCE+rWMXkVqcPxNmS1uNZxQZulAwn3oIW6VJZr0MZB32lzeT+indEAxjkn\nQD6b4OBavzudbGR40apIz13/9TnxDrmOUmV7s47EDjlve24vVnA0t5e5AoGAWj/y\nAh7lUR7rUOsY9ZDIjE98o//dXspdjuKkFFf9J/+RqM9SP60tfZGZlW2KaXlZERqF\n84JPwK58LADsiXhomax1Rmi0RBrreoTUoAJm70u5ollmAEemphYrOOBT8f95Z3Ab\nPUeXYddfprFh+GivRYy/47uY/uTpurqw8VJz+RkCgYBqJ9LZj3ITQ44LjUECZvKG\n5DYajRefJBvY+Kyaya6NLGJRMISsr17jzeCX3d1DUlLwY4ttoLvI1fxs20CsP5Fx\nBT9jmOdP9afmy7k81FV7PbckVec/fHOK37Co9yqh0BgsgpiaYGq1rGojyJy4I/+/\nUkqYTOiAegNwQG5zMgYxcw==\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-jqwml@apadb-v2-replica.iam.gserviceaccount.com",
-  "client_id": "118120826113890573663",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-jqwml%40apadb-v2-replica.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
-
 
 firebase = pyrebase.initialize_app(firebaseConfig)
 auth = firebase.auth()
